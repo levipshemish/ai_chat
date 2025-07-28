@@ -8,7 +8,7 @@ const Message = require('./models/Message');
 const app = express();
 const PORT = process.env.PORT || 10000;
 
-app.use(cors({ origin: 'https://ai-chat-ivory.vercel.app/' }));
+app.use(cors({ origin: 'https://ai-chat-ivory.vercel.app' }));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
