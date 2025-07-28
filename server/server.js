@@ -6,7 +6,7 @@ const OpenAI = require('openai');
 const Message = require('./models/Message');
 
 const app = express();
-const PORT = process.env.PORT || 5203;
+const PORT = process.env.PORT || 10000;
 
 app.use(cors({ origin: 'http://localhost:5179' }));
 app.use(express.json());
