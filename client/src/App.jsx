@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5203'; // Backend URL
+const API_URL = import.meta.env.VITE_BACKEND_URL; // Backend URL
 
 export default function App() {
   const [messages, setMessages] = useState([]);
